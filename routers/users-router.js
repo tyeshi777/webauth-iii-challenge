@@ -45,6 +45,6 @@ function generateToken(user) {
   const options = {
     expiresIn: "2hr"
   };
-  return jwt.sign(payload, secrets.jwt.secret, options);
+  return jwt.sign(payload, secrets.jwtSecret, options);
 }
 module.exports = router;
